@@ -2,7 +2,9 @@ PRIVACY POLICY
 Last updated: March 27, 2026This Privacy Policy for Jakub Lipowiecki ("we," "us," or "our") explains how and why we may collect, use, store, and share your information when you use our mobile application, Riftbound Scoreboard (the "App"), and any related services (collectively, the "Services").If you do not agree with this Privacy Policy, please do not use the App.If you have any questions or concerns, you can contact us at:
 hikibathere@gmail.com (mailto:hikibathere@gmail.com)
 
-1. WHAT INFORMATION DO WE COLLECT?We may collect certain information automatically when you use the App.A. Information Collected AutomaticallyWhen you use the App, we and certain third-party services may automatically collect technical and usage information, including:IP address
+1. WHAT INFORMATION DO WE COLLECT?We may collect certain information automatically when you use the App.
+
+A. Information Collected AutomaticallyWhen you use the App, we and certain third-party services may automatically collect technical and usage information, including:IP address
 Device type and model
 Operating system and version
 App version
@@ -13,7 +15,9 @@ App activity and usage information
 Crash reports, diagnostics, and performance data
 Approximate location (inferred from IP address)
 
-This information does not usually identify you directly by name, but it may be considered personal information under certain privacy laws.B. Information You Voluntarily ProvideWe may collect information you voluntarily provide to us, for example if you contact us by email for support or other inquiries.This may include:Your email address
+This information does not usually identify you directly by name, but it may be considered personal information under certain privacy laws.
+
+B. Information You Voluntarily ProvideWe may collect information you voluntarily provide to us, for example if you contact us by email for support or other inquiries.This may include:Your email address
 Any information you include in your message
 
 C. Sensitive InformationWe do not intentionally collect or process sensitive personal information (such as racial or ethnic origin, health data, or biometric data).D. Information from Third PartiesWe may receive limited information from third-party services used in the App, such as advertising or analytics providers, to help operate, improve, and monetize the App.
