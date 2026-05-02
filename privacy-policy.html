@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy · Riftbound Scoreboard</title>
+  <meta name="description" content="Privacy Policy for Riftbound Scoreboard." />
+  <style>
+    :root {
+      --bg: #081016;
+      --text: #f4f7fb;
+      --muted: #a9b6c3;
+      --line: rgba(255,255,255,.11);
+      --accent: #34d399;
+      --accent-2: #38bdf8;
+      --radius: 8px;
+      --shadow: 0 28px 90px rgba(0,0,0,.35);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(56,189,248,.18), transparent 30%),
+        radial-gradient(circle at 85% 15%, rgba(52,211,153,.15), transparent 30%),
+        var(--bg);
+      color: var(--text);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(8,16,22,.78);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      box-shadow: 0 10px 28px rgba(0,0,0,.35);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: var(--radius);
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: transform .18s ease, border-color .18s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .btn.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #031018;
+    }
+
+    .btn.secondary {
+      border-color: var(--line);
+      color: var(--text);
+      background: rgba(255,255,255,.04);
+    }
+
+    main {
+      padding: 78px 0 88px;
+    }
+
+    .policy-card {
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      color: #b7f7d7;
+      background: rgba(52,211,153,.11);
+      border: 1px solid rgba(52,211,153,.26);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 6vw, 64px);
+      line-height: .98;
+    }
+
+    .lead {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.65;
+      max-width: 720px;
+    }
+
+    .policy-content {
+      display: grid;
+      gap: 18px;
+      margin-top: 32px;
+    }
+
+    .policy-section {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.035);
+    }
+
+    .policy-section h2 {
+      margin: 0 0 10px;
+      color: var(--text);
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .policy-section p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .policy-section p + p {
+      margin-top: 12px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    footer a { color: var(--text); }
+
+    @media (max-width: 860px) {
+      .nav-links { display: none; }
+
+      main {
+        padding: 48px 0 64px;
+      }
+
+      .policy-card {
+        padding: 22px;
+      }
+
+      .policy-section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="index.html">
+        <img src="https://play-lh.googleusercontent.com/NTDhVNFBroy0I2nWdnXmpW5PtRST8r3P13GnIGbbZS9vuWgCMlrqRgofxMcegJYC2C_DfepshJgbTnrPD8Hd2Q=w240-h480" alt="Riftbound Scoreboard icon">
+        <span>Riftbound Scoreboard</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html#features">Features</a>
+        <a href="https://play.google.com/store/apps/details?id=com.kiba.riftbound.scoreboard">Google Play</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <article class="policy-card">
+        <span class="eyebrow">Privacy</span>
+        <h1>Privacy Policy</h1>
+        <p class="lead">
+
+PRIVACY POLICY
+Last updated: March 27, 2026This Privacy Policy for Jakub Lipowiecki ("we," "us," or "our") explains how and why we may collect, use, store, and share your information when you use our mobile application, Riftbound Scoreboard (the "App"), and any related services (collectively, the "Services").If you do not agree with this Privacy Policy, please do not use the App.If you have any questions or concerns, you can contact us at:
+hikibathere@gmail.com
+<br><br>
+1. WHAT INFORMATION DO WE COLLECT?We may collect certain information automatically when you use the App.
+<br>
+A. Information Collected AutomaticallyWhen you use the App, we and certain third-party services may automatically collect technical and usage information, including:IP address
+Device type and model
+Operating system and version
+App version
+Mobile network information
+Device identifiers (such as advertising ID, Android ID, if available)
+Language and region settings
+App activity and usage information
+Crash reports, diagnostics, and performance data
+Approximate location (inferred from IP address)
+
+This information does not usually identify you directly by name, but it may be considered personal information under certain privacy laws.
+<br>
+B. Information You Voluntarily ProvideWe may collect information you voluntarily provide to us, for example if you contact us by email for support or other inquiries.This may include:Your email address
+Any information you include in your message
+<br>
+C. Sensitive InformationWe do not intentionally collect or process sensitive personal information (such as racial or ethnic origin, health data, or biometric data).D. Information from Third PartiesWe may receive limited information from third-party services used in the App, such as advertising or analytics providers, to help operate, improve, and monetize the App.
+<br><br>
+2. HOW DO WE USE YOUR INFORMATION?We may use the information we collect to:Provide and operate the App
+Maintain security and prevent fraud or abuse
+Diagnose bugs, crashes, and technical issues
+Improve the App’s performance and functionality
+Display advertisements (including personalized ads where you have given consent)
+Comply with legal obligations
+Respond to support requests or inquiries
+
+We collect only the data that is necessary for these purposes (data minimization).
+<br><br>
+3. THIRD-PARTY SERVICESThe App may use third-party services that collect, monitor, or process certain information. These currently include:Google AdMob (for advertising)
+Google Play Services
+
+These third-party services may collect technical data such as device identifiers, IP address, app interaction data, and approximate location inferred from IP address, in accordance with their own privacy policies.We are not responsible for the privacy practices of third-party providers. We encourage you to review their privacy policies directly.Google Privacy Policy: https://policies.google.com/privacyHow Google uses data when you use our partners’ sites or apps: https://www.google.com/policies/privacy/partners/
+<br><br>
+4. ADVERTISINGWe may display third-party advertisements in the App, including ads provided by Google AdMob.Advertising providers may use certain device and usage data to show ads, limit ad frequency, measure ad performance, and help keep the App free to use.For users in the EEA, UK, and Switzerland:
+We rely on your consent for the use of personal data (such as advertising ID) for personalized advertising. You can manage or withdraw your consent at any time through your device settings or the consent mechanism provided in the App (if available). Without consent, we may still show non-personalized ads.
+<br><br>
+5. LEGAL BASES FOR PROCESSING (EEA / UK / SWITZERLAND)If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, we process your personal information only when we have a valid legal basis, such as:Your consent (particularly for personalized advertising)
+Our legitimate interests (for example, improving, securing, operating, and monetizing the App)
+Compliance with legal obligations
+Protection of vital interests
+<br><br>
+6. WHEN AND WITH WHOM DO WE SHARE YOUR INFORMATION?We may share information with third-party service providers that help us operate, improve, secure, and monetize the App. These may include providers of:Advertising (e.g., Google AdMob)
+Hosting
+Analytics
+Crash reporting
+App infrastructure and technical services
+
+We may also share information if required by law, to protect rights and safety, or in connection with a business transfer such as a merger, acquisition, or sale of assets.International data transfers: Some of our service providers (including Google) are located outside the EEA. In such cases, Google relies on Standard Contractual Clauses approved by the European Commission to ensure an adequate level of protection for your data.We do not sell your personal information in the traditional sense.
+<br><br>
+7. HOW LONG DO WE KEEP YOUR INFORMATION?We keep personal information only for as long as reasonably necessary to fulfill the purposes described in this Privacy Policy, unless a longer retention period is required by law.For example:Crash reports and diagnostics are typically kept for up to 90 days.
+Advertising-related data is retained in accordance with the policies of our advertising providers (e.g., Google).
+
+If we no longer need your information, we will delete, anonymize, or securely store it as appropriate.
+<br><br>
+8. HOW DO WE KEEP YOUR INFORMATION SAFE?We use reasonable technical and organizational safeguards to help protect your information.However, no method of transmission over the internet or method of electronic storage is completely secure, and we cannot guarantee absolute security.
+<br><br>
+9. CHILDREN’S PRIVACYThe App is not directed to children under the age required by applicable law in their jurisdiction (typically under 13 or 16 years old), and we do not knowingly collect personal information from children.If you believe that a child has provided us with personal information, please contact us and we will take reasonable steps to delete it.
+<br><br>
+10. YOUR PRIVACY RIGHTSDepending on where you live, you may have rights regarding your personal information, including the right to:Access your data
+Request correction of inaccurate data
+Request deletion of your data
+Restrict or object to certain processing
+Withdraw consent where processing is based on consent
+Lodge a complaint with a data protection authority
+
+To exercise any of these rights, contact us at:
+hikibathere@gmail.com (mailto:hikibathere@gmail.com)
+<br><br>
+11. DO-NOT-TRACKSome browsers and devices offer "Do Not Track" settings. Because there is currently no universally accepted standard for responding to these signals, we do not currently respond to Do Not Track signals.
+<br><br>
+12. UNITED STATES PRIVACY DISCLOSURESDepending on your U.S. state of residence, you may have additional privacy rights under applicable state laws.Categories of information we may collect include:Identifiers (such as IP address, device identifiers, advertising identifiers)
+Internet or network activity information
+Device and technical information
+Approximate geolocation derived from IP address
+Diagnostic and performance data
+
+We may disclose this information to service providers and advertising partners to operate, secure, improve, and monetize the App.If required by applicable law, you may have rights to access, delete, correct, or opt out of certain processing activities. To make such a request, contact:
+hikibathere@gmail.com (mailto:hikibathere@gmail.com)
+<br><br>
+13. THIRD-PARTY LINKSThe App may contain links to third-party websites or services. We are not responsible for the privacy or security practices of those third parties.
+<br><br>
+14. CHANGES TO THIS PRIVACY POLICYWe may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page and notify you if required by law.We encourage you to review this Privacy Policy periodically.
+<br><br>
+15. CONTACT USIf you have any questions about this Privacy Policy, you may contact us at:Jakub Lipowiecki
+Warsaw, Mazowieckie
+Poland
+Email: hikibathere@gmail.com
+
+
+
+        </p>
+
+
+
+
+
+
+
+
+
+
+        <div class="actions">
+          <a class="btn secondary" href="index.html">Back to home</a>
+          <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.kiba.riftbound.scoreboard">Open Google Play</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Kiba Dev · Riftbound Scoreboard</span>
+      <span>
+        <a href="index.html">Home</a> ·
+        <a href="https://play.google.com/store/apps/details?id=com.kiba.riftbound.scoreboard">Google Play</a>
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
