@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kiba</title>
+  <meta name="description" content="A simple portfolio page with Kiba's projects." />
+  <style>
+    :root {
+      --bg: #081016;
+      --text: #f4f7fb;
+      --muted: #a9b6c3;
+      --line: rgba(255,255,255,.11);
+      --accent: #34d399;
+      --accent-2: #38bdf8;
+      --radius: 8px;
+      --shadow: 0 28px 90px rgba(0,0,0,.35);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(56,189,248,.18), transparent 30%),
+        radial-gradient(circle at 85% 18%, rgba(52,211,153,.16), transparent 32%),
+        var(--bg);
+      color: var(--text);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line);
+      background: rgba(8,16,22,.68);
+      backdrop-filter: blur(16px);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 900;
+      letter-spacing: .2px;
+    }
+
+    .nav-link {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav-link:hover {
+      color: var(--text);
+    }
+
+    main {
+      padding: 92px 0;
+    }
+
+    .hero {
+      max-width: 760px;
+      margin-bottom: 48px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      color: #b7f7d7;
+      background: rgba(52,211,153,.11);
+      border: 1px solid rgba(52,211,153,.26);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.65;
+      max-width: 680px;
+    }
+
+    .projects {
+      display: grid;
+      gap: 18px;
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+    }
+
+    .project-card h2 {
+      margin: 0 0 10px;
+      font-size: clamp(26px, 4vw, 38px);
+      line-height: 1.05;
+    }
+
+    .project-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+      max-width: 640px;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #c8d3dc;
+      background: rgba(255,255,255,.04);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: var(--radius);
+      font-weight: 800;
+      border: 1px solid transparent;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #031018;
+      white-space: nowrap;
+      transition: transform .18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        padding: 64px 0;
+      }
+
+      .project-card {
+        grid-template-columns: 1fr;
+        padding: 22px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#">Kiba</a>
+      <a class="nav-link" href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Hi, I’m Kiba, and these are my projects.</h1>
+    </section>
+
+    <section id="projects" class="projects">
+      <article class="project-card">
+        <div>
+          <h2>Riftbound Scoreboard</h2>
+          <p>
+            A clean and simple companion app for tracking score in Riftbound. Built for quick tabletop use with a readable two-player layout, legend selection and starting player randomization.
+          </p>
+
+          <div class="project-meta">
+            <span class="tag">Android</span>
+            <span class="tag">Tabletop</span>
+            <span class="tag">Score tracker</span>
+          </div>
+        </div>
+
+        <a class="btn" href="https://kibahere.github.io/riftbound_scoreboard/">
+          Open project
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Kiba</span>
+      <span>Made for projects worth keeping around.</span>
+    </div>
+  </footer>
+</body>
+</html>
